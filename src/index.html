@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<!-- head include -->
+@@include('html/partials/head.html', {
+"title": "Главная"
+})
+
+<body>
+    <div class="wrapper">
+        <!-- modal include -->
+        @@include('html/partials/modal.html')
+
+        <!-- main -->
+        <main>
+            <!-- section -->
+            <section class="section-top bg-1">
+                <div class="container">
+                    <div class="section-top__wrapper">
+                        <h1 class="title-h1">
+                            Актёрское мастерство в&nbsp;Санкт-Петербурге для детей и&nbsp;подростков 4&ndash;16&nbsp;лет
+                        </h1>
+
+                        <div class="video-preview__box">
+                            <button class="video-preview__btn">
+                                <img src="./img/icon-open-video-main.svg" alt="" class="video-preview__btn-icon">
+                            </button>
+                            <span class="video-preview__label">Посмотрите видео</span>
+                            <video class="video-preview__video" poster="./img/cover-1.jpg" loop="loop" autoplay
+                                muted="muted">
+                                <source type="video/webm" src="./video/preview-1.webm">
+                                <source type="video/mp4" src="./video/preview-1.mp4">
+                            </video>
+                        </div>
+
+                        <div class="free-class">
+                            <span>Приходите на пробное <mark>бесплатное</mark>занятие</span>
+                            <button class="btn-primary">Записать ребенка</button>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="benefits">
+                <div class="container">
+                    <ul class="list benefits__list">
+                        <li class="benefits__item">
+                            <img src="./img/icon-01.png" alt="" class="benefist__img">
+                            <p class="benefists__text">
+                                Ребёнок начнёт комфортно чувствовать себя на&nbsp;публике
+                            </p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="./img/icon-02.png" alt="" class="benefist__img">
+                            <p class="benefists__text">
+                                Научится правильно говорить и&nbsp;красиво двигаться
+                            </p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="./img/icon-03.png" alt="" class="benefist__img">
+                            <p class="benefists__text">
+                                Раскрепостится: <span>ваш&nbsp;ребёнок забудет о&nbsp;физических зажимах
+                                    и&nbsp;эмоциональном напряжении</span>
+                            </p>
+                        </li>
+                        <li class="benefits__item">
+                            <img src="./img/icon-04.png" alt="" class="benefist__img">
+                            <p class="benefists__text">
+                                Сможет легко импровизировать, погружаться в&nbsp;роль, воображать
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section section--disciplines">
+                <div class="container">
+                    <div class="section__inner">
+                        <h2 class="section__title">Занятия включают <span class="highlight">3 дисциплины</span> </h2>
+                        <p class="section__subtitle">Которые помогают ребёнку раскрыть себя, стать увереннее, смелее
+                            и наблюдательнее.
+                            Занятия в комплексе развивают тело, речь и воображение.</p>
+
+                        <div class="section__content">
+                            <article class="card card--disciplines"
+                                style="background-image: url('img/page-1/section/disciplines/skill.png');">
+                                <h4 class="card__title">Актерское <br> мастерство</h4>
+
+                                <a href="#" class="card__link">Подробнее</a>
+                            </article>
+                            <article class="card card--disciplines"
+                                style="background-image: url('img/page-1/section/disciplines/speech.png');">
+                                <h4 class="card__title">Сценическая <br> речь</h4>
+
+                                <a href="#" class="card__link">Подробнее</a>
+                            </article>
+                            <article class="card card--disciplines"
+                                style="background-image: url('img/page-1/section/disciplines/movement.png');">
+                                <h4 class="card__title">Сценическое <br> движение</h4>
+
+                                <a href="#" class="card__link">Подробнее</a>
+                            </article>
+                            <article class="card card--disciplines badge"
+                                style="background-image: url('img/page-1/section/disciplines/sing.png');">
+                                <h4 class="card__title">Занятия <br> вокалом</h4>
+
+                                <a href="#" class="card__link">Подробнее</a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+            <!-- <form action="/" class="form" method="post">
+                <h2 class="form__title">From title</h2>
+                <div class="form__group">
+                    <input type="text" name="name" class="form__input" placeholder="Имя" required>
+                </div>
+                <div class="form__group">
+                    <input type="tel" name="tel" class="form__input" placeholder="Телефон" required>
+                </div>
+
+                <button type="submit" class="btn btn--blue form__btn">Заказать звонок</button>
+            </form> -->
+        </main>
+        <!-- footer include -->
+        @@include('html/partials/footer.html')
+    </div>
+
+</body>
+
+</html>
