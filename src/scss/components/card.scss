@@ -90,4 +90,29 @@
             }
         }
     }
+
+    &--theater-benefits {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        min-width: 220px;
+
+        .card__image {
+        }
+
+        .card__title {
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        .card__text {
+            font-size: 1.4rem;
+            line-height: 22px;
+            text-align: center;
+        }
+    }
 }
