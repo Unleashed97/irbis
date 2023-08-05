@@ -115,4 +115,23 @@
             text-align: center;
         }
     }
+
+    &--invite {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        max-width: 194px;
+
+        @media (max-width: 992px) {
+            max-width: 185px;
+        }
+
+        .card__text {
+            font-size: 1.4rem;
+            line-height: 22px;
+            text-align: center;
+        }
+    }
 }
