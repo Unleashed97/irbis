@@ -227,10 +227,11 @@
         position: relative;
 
         max-width: 1920px;
+        margin-bottom: 0;
 
         background-color: #faf8fb;
 
-        overflow: hidden;
+        // overflow: hidden;
 
         .decor-top {
             position: absolute;
@@ -243,10 +244,17 @@
 
         .section__inner {
             padding: 168px 0 90px;
+
+            @media (max-width: 768px) {
+                padding: 138px 0 60px;
+            }
+            @media (max-width: 576px) {
+                padding: 118px 0 40px;
+            }
         }
 
         .section__title {
-            margin-bottom: 40px;
+            margin: 0 auto 40px;
 
             text-align: center;
 
@@ -256,12 +264,17 @@
         }
 
         .section__content {
+            display: flex;
+            justify-content: center;
+        }
+
+        .section__card-list {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 30px;
 
-            @media (max-width: 768px) {
-                grid-template-columns: repeat(2, 1fr);
+            @media (max-width: 992px) {
+                grid-template-columns: repeat(2, minmax(220px, 270px));
                 gap: 60px 30px;
             }
             @media (max-width: 576px) {
@@ -415,7 +428,6 @@
             }
 
             @media (max-width: 650px) {
-                max-width: auto;
                 flex-wrap: nowrap;
                 justify-content: flex-start;
 
@@ -546,6 +558,120 @@
                 left: 50%;
 
                 transform: translate(-50%);
+            }
+        }
+    }
+
+    &--getting {
+        position: relative;
+
+        max-width: 1920px;
+        margin-bottom: 0;
+
+        background-color: #faf8fb;
+
+        .decor-top {
+            position: absolute;
+            top: 0;
+
+            width: 100%;
+            height: 77px;
+            object-fit: cover;
+        }
+
+        .section__inner {
+            padding: 178px 0 90px;
+
+            @media (max-width: 768px) {
+                padding: 168px 0 60px;
+            }
+            @media (max-width: 576px) {
+                padding: 118px 0 40px;
+            }
+        }
+
+        .section__content {
+        }
+
+        .section__getting-items {
+            display: grid;
+            grid-template-columns: minmax(306px, 370px) minmax(222px, 270px) minmax(
+                    390px,
+                    471px
+                );
+
+            grid-template-rows: 300px 320px;
+            gap: 30px;
+
+            margin-bottom: 30px;
+
+            @media (max-width: 1023px) {
+                grid-template-columns: 370px 270px 670px 624px;
+                grid-template-rows: 300px;
+                gap: 20px;
+                overflow-x: auto;
+            }
+        }
+    }
+
+    &--master-actors {
+        margin-bottom: 0;
+
+        .section__title {
+            display: none;
+
+            @media (max-width: 768px) {
+                display: block;
+            }
+        }
+
+        .section__content {
+            @media (max-width: 768px) {
+                overflow-x: auto;
+            }
+        }
+
+        .section__actors-items {
+            position: relative;
+
+            display: flex;
+            border-radius: 20px;
+            overflow: hidden;
+
+            @media (max-width: 768px) {
+                gap: 20px;
+                width: fit-content;
+
+                border-radius: 0;
+                overflow: visible;
+            }
+            @media (max-width: 576px) {
+                gap: 10px;
+            }
+        }
+
+        .section__caption {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            z-index: 1;
+
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 40px;
+            color: #fff;
+
+            @media (max-width: 1200px) {
+                bottom: 30px;
+                left: 30px;
+
+                font-size: 2.4rem;
+                font-weight: 500;
+                line-height: 32px;
+            }
+
+            @media (max-width: 768px) {
+                display: none;
             }
         }
     }

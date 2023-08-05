@@ -480,6 +480,144 @@
         }
     }
 
+    &--getting {
+        position: relative;
+
+        color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+
+        span {
+            position: absolute;
+        }
+
+        &:nth-child(1) {
+            span {
+                bottom: 20px;
+                left: 20px;
+
+                font-size: 2rem;
+                font-weight: 500;
+                line-height: 28px;
+            }
+        }
+        &:nth-child(2) {
+            span {
+                top: 20px;
+                left: 20px;
+
+                font-size: 2rem;
+                font-weight: 500;
+                line-height: 28px;
+            }
+        }
+        &:nth-child(3) {
+            grid-row: 2;
+            grid-column: 1/3;
+
+            border-radius: 20px;
+
+            @media (max-width: 1023px) {
+                grid-row: auto;
+                grid-column: auto;
+            }
+
+            span {
+                top: 40px;
+                left: 40px;
+
+                font-size: 3rem;
+                font-weight: 600;
+                line-height: 40px;
+
+                @media (max-width: 1200px) {
+                    top: 30px;
+                    left: 30px;
+
+                    font-size: 2.4rem;
+                    font-weight: 500;
+                    line-height: 32px;
+                }
+            }
+        }
+
+        &:nth-child(4) {
+            grid-column: 3;
+            grid-row: 1/3;
+
+            border-radius: 20px;
+
+            @media (max-width: 1023px) {
+                grid-row: auto;
+                grid-column: auto;
+
+                span {
+                    max-width: 205px;
+                }
+            }
+
+            span {
+                top: 40px;
+                left: 40px;
+
+                font-size: 3.6rem;
+                font-weight: 600;
+                line-height: 46px;
+
+                @media (max-width: 1200px) {
+                    top: 30px;
+                    left: 30px;
+
+                    font-size: 3rem;
+                    line-height: 40px;
+                }
+            }
+        }
+
+        .card__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &--master-actors {
+        position: relative;
+
+        @media (max-width: 768px) {
+            width: 320px;
+            height: 202px;
+        }
+
+        span {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+
+            display: none;
+
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 18px;
+            color: #fff;
+
+            @media (max-width: 768px) {
+                display: block;
+            }
+        }
+        .card__image {
+            display: block;
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            @media (max-width: 768px) {
+                border-radius: 10px;
+            }
+        }
+    }
+
     &--review-photo {
         .card__image {
             margin-bottom: 14px;
