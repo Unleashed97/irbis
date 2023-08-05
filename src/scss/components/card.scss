@@ -318,4 +318,106 @@
             padding: 30px 18px 40px;
         }
     }
+
+    &--price {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 576px) {
+            width: 270px;
+        }
+
+        &:nth-child(1) {
+            .card__image-wrapper::after {
+                background-color: #e2ffea;
+            }
+        }
+        &:nth-child(2) {
+            .card__image-wrapper::after {
+                background-color: #ffe7e2;
+            }
+        }
+        &:nth-child(3) {
+            .card__image-wrapper::after {
+                background-color: #fff9e2;
+            }
+        }
+        &:nth-child(4) {
+            .card__image-wrapper::after {
+                background-color: #e2f0ff;
+            }
+        }
+
+        .card__image-wrapper {
+            position: relative;
+            height: 204px;
+
+            margin-bottom: 20px;
+
+            overflow: hidden;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: -1;
+
+                height: 168px;
+                width: 100%;
+
+                border-radius: 10px;
+            }
+        }
+
+        .card__image {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+
+            transform: translate(-50%);
+        }
+
+        .card__title {
+            flex-grow: 1;
+            margin-bottom: 20px;
+
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 26px;
+        }
+
+        .card__inner {
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                margin-bottom: 20px;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+
+                font-size: 1.4rem;
+                line-height: 22px;
+            }
+        }
+
+        .card__price {
+            flex-grow: 1;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 26px;
+            color: #ff6a4d;
+
+            span {
+                font-size: 2rem;
+                line-height: 28px;
+            }
+        }
+    }
 }
