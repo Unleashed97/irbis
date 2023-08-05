@@ -358,6 +358,87 @@
         }
     }
 
+    &--teachers {
+        position: relative;
+
+        padding-bottom: 54px;
+        border-bottom: 1px solid #eaeaea;
+
+        .decor {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%);
+
+            max-width: 100%;
+
+            z-index: -1;
+        }
+
+        .section__inner {
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding-top: 91px;
+
+            // overflow: hidden;
+
+            @media (max-width: 768px) {
+                align-items: flex-start;
+            }
+        }
+
+        .section__title {
+            max-width: 768px;
+            margin-bottom: 30px;
+
+            text-align: center;
+        }
+
+        .section__content {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+            width: 100%;
+
+            // overflow-x: hidden;
+
+            @media (max-width: 1200px) {
+                flex-wrap: wrap;
+                gap: 32px;
+
+                max-width: 870px;
+            }
+
+            @media (max-width: 650px) {
+                max-width: auto;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+
+                overflow: auto;
+            }
+        }
+
+        .section__teachers-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+
+            @media (max-width: 768px) {
+                width: 870px;
+                overflow-x: auto;
+            }
+
+            @media (max-width: 650px) {
+                overflow: visible;
+            }
+        }
+    }
+
     &__title {
         margin-bottom: 20px;
 
