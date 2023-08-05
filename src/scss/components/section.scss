@@ -482,6 +482,74 @@
         }
     }
 
+    &--reviews {
+        padding-bottom: 90px;
+
+        @media (max-width: 768px) {
+            padding-bottom: 60px;
+        }
+        @media (max-width: 576px) {
+            padding-bottom: 40px;
+        }
+
+        border-bottom: 1px solid #eaeaea;
+
+        .section__inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section__title {
+            max-width: 778px;
+
+            margin-bottom: 28px;
+            text-align: center;
+        }
+
+        .section__content {
+            position: relative;
+            width: 100%;
+
+            @media (max-width: 992px) {
+                padding-bottom: 74px;
+            }
+            @media (max-width: 576px) {
+                padding-bottom: 64px;
+            }
+        }
+
+        .section__btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 10px 24px;
+
+            font-family: 1.6rem;
+            font-weight: 500;
+            line-height: 24px;
+            color: #8257b0;
+            white-space: nowrap;
+
+            background-color: #fff;
+            border-radius: 10px;
+            border: 2px solid #f5f1f8;
+
+            @media (max-width: 992px) {
+                top: auto;
+                right: auto;
+                bottom: 0;
+                left: 50%;
+
+                transform: translate(-50%);
+            }
+        }
+    }
+
     &__title {
         margin-bottom: 20px;
 
