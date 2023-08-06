@@ -1,0 +1,18 @@
+.socials {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 20px;
+
+    li a {
+        display: block;
+        width: 24px;
+        height: 24px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #fff;
+        border-radius: 5px;
+    }
+}

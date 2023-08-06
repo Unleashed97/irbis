@@ -51,18 +51,18 @@ p {
 
 // wrapper grid system
 .wrapper {
-    display: grid;
-    grid-template-areas:
-        'header'
-        'main'
-        'footer';
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 100%;
-    min-height: 100vh;
+    // display: grid;
+    // grid-template-areas:
+    //     'header'
+    //     'main'
+    //     'footer';
+    // grid-template-rows: auto 1fr auto;
+    // grid-template-columns: 100%;
+    // min-height: 100vh;
 }
 
 main {
-    grid-area: main;
+    // grid-area: main;
 }
 
 .highlight {
@@ -508,3 +508,5 @@ main {
 @import 'components/form.scss';
 @import 'components/tabs.scss';
 @import 'components/swiper.scss';
+@import 'components/socials.scss';
+@import 'components/contacts.scss';

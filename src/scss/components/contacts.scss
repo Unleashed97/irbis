@@ -1,0 +1,36 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (max-width: 576px) {
+        flex-direction: row;
+    }
+    @media (max-width: 350px) {
+        flex-direction: column;
+    }
+
+    &__tel,
+    &__mail {
+        display: block;
+    }
+
+    &__tel {
+        margin-bottom: 4px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        color: #fff;
+    }
+
+    &__mail {
+        font-size: 14px;
+        line-height: 22px;
+        color: #d0b0f1;
+    }
+
+    &__rating {
+        display: block;
+        height: fit-content;
+    }
+}

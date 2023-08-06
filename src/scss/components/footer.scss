@@ -1,17 +1,128 @@
 .footer {
-    width: 100%;
-    grid-area: footer;
-    background-color: #ccc;
+    background-color: #8257b0;
     &__inner {
+        padding: 60px 0 30px;
+
+        // display: grid;
+        // grid-template-columns: repeat(3, minmax(max-content, auto));
+        // gap: 147px;
+
         display: flex;
         justify-content: space-between;
-        padding: 20px 0;
+        gap: 30px;
 
-        @media (max-width: 768px) {
-            flex-direction: column;
-            gap: 20px;
+        border-bottom: 1px solid #9467c3;
+
+        @media (max-width: 576px) {
+            flex-wrap: wrap;
+            gap: 40px;
         }
     }
-    &__logo {
+
+    &__col-title {
+        margin-bottom: 10px;
+
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+
+        color: #fff;
+    }
+
+    &__copy {
+        padding: 30px 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .footer__copyright {
+            font-size: 14px;
+            line-height: 22px;
+            color: #fff;
+        }
+
+        a {
+            font-size: 13px;
+            line-height: 18px;
+            color: #d0b0f1;
+            text-decoration: underline;
+        }
+    }
+}
+
+.footer-bottom {
+    background-color: #754ba2;
+    &__inner {
+        padding: 60px 0;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        @media (max-width: 650px) {
+            grid-template-columns: 1fr;
+            padding: 40px 0;
+        }
+    }
+
+    .newsletter {
+        padding: 30px;
+
+        border-radius: 20px;
+        border: 2px dashed #d0b0f1;
+
+        @media (max-width: 650px) {
+            display: none;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            color: #fff;
+
+            .highlight-yellow {
+                color: #febe29;
+            }
+        }
+    }
+
+    .invite {
+        padding: 30px;
+
+        background-color: #8257b0;
+        border-radius: 20px;
+
+        &__title {
+            margin-bottom: 4px;
+
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 32px;
+            color: #fff;
+        }
+
+        &__text {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+        }
+
+        a {
+            font-size: 16px;
+            line-height: 24px;
+            color: #febe29;
+            text-decoration: underline;
+        }
     }
 }
