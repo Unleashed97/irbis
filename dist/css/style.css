@@ -3842,6 +3842,7 @@ p {
 .slider--parents-video .swiper-button-next {
   position: absolute;
   top: 90px;
+  cursor: pointer;
 }
 @media (max-width: 992px) {
   .slider--parents-video .swiper-button-prev,
@@ -3899,6 +3900,7 @@ p {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 @media (max-width: 992px) {
   .slider--parents-photo .swiper-button-prev,
@@ -3954,6 +3956,7 @@ p {
 .slider--perspectives .swiper-button-next {
   position: absolute;
   top: 100px;
+  cursor: pointer;
 }
 @media (max-width: 992px) {
   .slider--perspectives .swiper-button-prev,
