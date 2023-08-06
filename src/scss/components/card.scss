@@ -135,6 +135,33 @@
         }
     }
 
+    &--invite-sm {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+        @media (max-width: 700px) {
+            flex-direction: row;
+        }
+
+        .card__text {
+            max-width: 205px;
+            font-size: 1.4rem;
+            line-height: 22px;
+            text-align: left;
+
+            @media (max-width: 992px) {
+                text-align: center;
+            }
+            @media (max-width: 700px) {
+                text-align: left;
+            }
+        }
+    }
+
     &--teacher {
         max-width: 270px;
 
@@ -477,6 +504,65 @@
             line-height: 22px;
             color: #8257b0;
             text-decoration: underline;
+        }
+    }
+
+    &--perspective {
+        overflow: visible;
+        .card__image-wrapper {
+            position: relative;
+
+            margin-bottom: 20px;
+        }
+        .card__logo {
+            position: absolute;
+            top: -30px;
+            right: 22px;
+
+            width: 60px;
+            height: 60px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 50%;
+            background-color: #fff;
+
+            box-shadow: 0 4px 12px 0 rgba(#000, 0.08);
+        }
+
+        .card__image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .card__badge {
+            display: block;
+            width: fit-content;
+
+            padding: 4px 10px;
+            margin-bottom: 10px;
+
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 18px;
+            background-color: #f5f1f8;
+            border-radius: 10px;
+        }
+
+        .card__title {
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        .card__date {
+            font-size: 1.4rem;
+            line-height: 22px;
+            color: #999999;
         }
     }
 

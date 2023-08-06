@@ -1,9 +1,7 @@
 .swiper {
-}
-
-.swiper-slide {
-    // display: flex;
-    // justify-content: center;
+    &--perspectives {
+        overflow-y: visible;
+    }
 }
 
 .slider--parents-video {
@@ -48,6 +46,26 @@
             right: 0;
         }
     }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: none;
+    }
+
+    .swiper-button-lock {
+        display: block;
+    }
+
+    .swiper-button-prev.swiper-button-disabled,
+    .swiper-button-next.swiper-button-disabled {
+        opacity: 1;
+    }
+
+    .swiper-button-next {
+        img {
+            transform: rotate(180deg);
+        }
+    }
 }
 
 .slider--parents-photo {
@@ -86,24 +104,81 @@
             right: 0;
         }
     }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: none;
+    }
+
+    .swiper-button-lock {
+        display: block;
+    }
+
+    .swiper-button-prev.swiper-button-disabled,
+    .swiper-button-next.swiper-button-disabled {
+        opacity: 1;
+    }
+
+    .swiper-button-next {
+        img {
+            transform: rotate(180deg);
+        }
+    }
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-    display: none;
-}
+.slider--perspectives {
+    position: relative;
 
-.swiper-button-lock {
-    display: block;
-}
+    @media (max-width: 1300px) {
+        padding: 0 104px;
+    }
 
-.swiper-button-prev.swiper-button-disabled,
-.swiper-button-next.swiper-button-disabled {
-    opacity: 1;
-}
+    @media (max-width: 992px) {
+        padding: 0;
+    }
 
-.swiper-button-next {
-    img {
-        transform: rotate(180deg);
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: absolute;
+        top: 100px;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    .swiper-button-prev {
+        left: -48px;
+
+        @media (max-width: 1300px) {
+            left: 0;
+        }
+    }
+    .swiper-button-next {
+        right: -48px;
+
+        @media (max-width: 1300px) {
+            right: 0;
+        }
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: none;
+    }
+
+    .swiper-button-lock {
+        display: block;
+    }
+
+    .swiper-button-prev.swiper-button-disabled,
+    .swiper-button-next.swiper-button-disabled {
+        opacity: 1;
+    }
+
+    .swiper-button-next {
+        img {
+            transform: rotate(180deg);
+        }
     }
 }
