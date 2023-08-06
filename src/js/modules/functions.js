@@ -80,3 +80,14 @@ export const handleTabs = () => {
         )
     }
 }
+
+export const showStudies = () => {
+    const metroList = document.querySelector('.metro-list')
+    const showBtn = document.querySelector('.metro-list-show-all')
+
+    if (metroList && showBtn) {
+        showBtn.addEventListener('click', () => {
+            metroList.classList.toggle('show')
+        })
+    }
+}

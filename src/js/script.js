@@ -4,6 +4,7 @@ customFunctions.handleBurger()
 customFunctions.handleModal()
 customFunctions.handleAccordion()
 customFunctions.handleTabs()
+customFunctions.showStudies()
 
 // vendors
 const swiperParentReviewVideo = new Swiper('.swiper--parents-video', {

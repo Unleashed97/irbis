@@ -1040,6 +1040,94 @@
         }
     }
 
+    &--choose-studio {
+        .section__title {
+            margin-bottom: 40px;
+        }
+        .map-wrapper {
+            margin-bottom: 40px;
+        }
+
+        .metro-list {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0 30px;
+
+            @media (max-width: 992px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media (max-width: 600px) {
+                grid-template-columns: 1fr;
+                max-height: 278px;
+
+                transition: 0.3s linear;
+
+                overflow: hidden;
+
+                &.show {
+                    max-height: 100%;
+                }
+            }
+
+            .metro-list-show-all {
+                position: absolute;
+                bottom: 0;
+
+                display: none;
+                width: 100%;
+                padding: 10px;
+
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                color: #8257b0;
+
+                background: #fff;
+                border: 2px solid #f5f1f8;
+                border-radius: 10px;
+                cursor: pointer;
+
+                @media (max-width: 600px) {
+                    display: block;
+                }
+            }
+        }
+
+        .metro-item {
+            padding: 20px;
+
+            @media (max-width: 992px) {
+                padding: 16px;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+        .metro-item-icon {
+            width: 17px;
+            height: 17px;
+
+            flex-shrink: 0;
+        }
+
+        .metro-item-caption {
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 22px;
+        }
+
+        .metro-item-address {
+            font-size: 14px;
+            line-height: 22px;
+            color: #999999;
+        }
+    }
+
     &__title {
         margin-bottom: 20px;
 
