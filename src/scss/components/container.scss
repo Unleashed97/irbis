@@ -3,6 +3,10 @@
     padding: 0 23px;
     margin: 0 auto;
 
+    &--lg {
+        max-width: 1646px;
+    }
+
     @media (max-width: 992px) {
         padding: 0 39px;
     }
